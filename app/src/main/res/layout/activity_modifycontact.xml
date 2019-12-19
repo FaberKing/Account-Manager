@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg1"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/textViewA"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="Account"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtNama"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewA"
+            android:layout_alignLeft="@+id/textViewA"
+            android:layout_alignRight="@+id/textViewA"
+            android:ems="10"
+            android:hint="Account"></EditText>
+
+        <TextView
+            android:id="@+id/textViewB"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNama"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:text="Username"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtUsername"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewB"
+            android:layout_alignRight="@+id/txtNama"
+            android:layout_alignParentLeft="true"
+            android:ems="10"
+            android:hint="Username" />
+
+        <TextView
+            android:id="@+id/TextViewC"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtUsername"
+            android:layout_alignParentLeft="true"
+            android:text="Password"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextViewC"
+            android:layout_alignRight="@+id/txtNama"
+            android:layout_alignParentLeft="true"
+            android:ems="10"
+            android:hint="Password" />
+
+        <TextView
+            android:id="@+id/TextViewD"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPassword"
+            android:layout_alignParentLeft="true"
+            android:text="Email"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextViewD"
+            android:layout_alignRight="@+id/txtNama"
+            android:layout_alignParentLeft="true"
+            android:ems="10"
+            android:hint="Email" />
+
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="133dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/txtEmail"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="300dp"
+            android:background="#00893d"
+            android:text="SAVE"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="133dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/txtEmail"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="100dp"
+            android:background="#ffff4444"
+            android:onClick="Kembali"
+            android:text="BACK"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="123dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/txtEmail"
+            android:layout_alignRight="@+id/txtPassword"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginBottom="300dp"
+            android:background="#2196F3"
+            android:text="DELETE"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

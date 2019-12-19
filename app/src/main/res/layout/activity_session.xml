@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/tvNomor"
+        android:gravity="left|center_vertical"
+        android:text="Account"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/tvNomor"
+        android:layout_below="@id/nama"
+        android:gravity="left|center_vertical"
+        android:text="Username"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/tvNomor"
+        android:layout_below="@id/username"
+        android:gravity="left|center_vertical"
+        android:text="Password"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="2dip"
+        android:layout_toRightOf="@+id/tvNomor"
+        android:text="email"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/right"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-66dp"
+        android:layout_marginTop="37dp"
+        android:layout_toRightOf="@+id/username"
+        android:text="EDIT"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tvNomor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="2dp"
+        android:gravity="left"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+</RelativeLayout>
